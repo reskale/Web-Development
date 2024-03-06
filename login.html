@@ -1,0 +1,61 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelopedia-A Travlling Site</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&family=Ubuntu&display=swap" rel="stylesheet">
+    <style></style>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="img/logo.jpeg"class="logo" height="40px" ></a>
+    <div>
+        <ul id="navbar">
+            <li><a class="index.html" href="index.html" class="href">Home</a></li>
+            <li><a href="shop.html" class="href">Best deals</a></li>
+            <li><a href="about.html" class="href">About us</a></li>
+            <li><a href="contact.html" class="href">Contact us</a></li>
+            <li><a href="regiter.html" class="">Register</a></li>
+            <li><a href="login.html" class="active">Log in</a></li>
+        </ul>
+    </div>
+    </section>
+<section id="main">
+    <div>
+    <div style = "width:300px; border: solid 1px #333333; ">
+       <div style = "background-color:#333333; color:#FFFFFF; padding:3px;"><b>Login</b></div>
+           
+       <div style = "margin:30px">
+          
+          <form action = "login2.php" method = "post">
+             <label>UserName  :</label><input type = "text" name = "username" class = "box"/><br /><br />
+             <label>Password  :</label><input type = "password" name = "password" class = "box" /><br/><br />
+             <input type = "submit" value = " Submit "/><br />
+          </form>
+          
+          <div style = "font-size:11px; color:#cc0000; margin-top:10px"><?php echo $error; ?></div>
+               
+       </div>
+           
+    </div>
+       
+ </div>
+    </section>
+	
+        
+  
+    
+</body>
+</html>

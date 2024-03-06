@@ -1,0 +1,566 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+h1{
+    font-size: 50px;
+    line-height: 50px;
+    color: black;
+}
+h2{
+    font-size: 45px;
+    line-height: 48px;
+    color: black; 
+}
+h4{
+    font-size: 20px;
+
+    color: black;
+}
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+p{
+    font-size: 16px;
+    color: rgb(11, 39, 39);
+    margin: 15px 0 20px 0;
+    
+}
+.sect-p1{
+    padding: 40px 80px;
+}
+.sect-m1{
+    margin: 40px 0;
+}
+ #normal1{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 10px;
+    color: rgb(113, 10, 10);
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s;
+
+}
+button .normal2{
+    font-size: 50px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: rgb(113, 10, 10);
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s;
+
+}
+.book-btn{
+    background-color: rgb(167, 136, 140);
+    font-size: 14px;
+    border-radius: 3px;
+    padding: 3px;
+}
+body{
+    width: 100%;
+}
+.logo{
+ border-radius: 10px;  
+ border: 1px solid gray; 
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: rgb(163, 196, 217);
+    box-shadow: rgb(169, 95, 95);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+list-style: none;
+padding: 0 20px;
+position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active
+{
+    color: rgb(36, 184, 157);
+    
+    
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width:30%;
+    height: 2px;
+    background:rgb(36, 184, 157);
+    position: absolute;
+    bottom: -4px;
+    left:20px;
+}
+#main{
+    background-image:url("img/backg.webp") ;
+    height: 90vh;
+    width: 100%;
+    background-position:top 25% right 0;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#main h4{
+    padding-bottom: 15px;
+    font-family: 'Roboto Mono', monospace;
+font-family: 'Ubuntu', sans-serif;
+}
+#main h1{
+    color: rgb(7, 24, 51);
+    padding-bottom: 15px;
+    font-family: 'Roboto Mono', monospace;
+}
+#main button{
+
+    background-color: rgb(115, 196, 168);
+    color: rgb(101, 43, 152);
+    border:0;
+    border-radius: 10px;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 25px;
+}
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0,0.3);
+    border: 1px solid rgb(239, 234, 234);
+    border-radius: 5px;
+    margin: 15px 0;
+
+}
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(70,70,221,0.1);
+   
+}
+#feature .fe-box img{
+width: 100%;
+margin-bottom: 10px;
+}
+
+#feature .fe-box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 5px;
+    color: rgb(6, 23, 17);
+    background-color:rgb(197, 114, 128) ;
+}
+#feature .fe-box:nth-child(2) h6{
+    background-color: rgb(73, 164, 128);
+}
+#feature .fe-box:nth-child(3) h6{
+    background-color: rgb(152, 213, 233);
+}
+#feature .fe-box:nth-child(4) h6{
+    background-color: rgb(186, 198, 215);
+}
+#feature .fe-box:nth-child(5) h6{
+    background-color: rgb(225, 210, 113);
+}
+#feature .fe-box:nth-child(6) h6{
+    background-color: rgb(163, 33, 75);
+}
+/* for featured part 2 product*/
+
+#product1{
+    text-align: center;
+}
+#product1 .pro-container {
+    display: flex;
+       justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid rgb(221, 197, 166);
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0,0.3);
+    border-radius: 20px;
+    position: relative;
+    margin: 15px 0;
+    transition: 0.2s;
+    position: relative;
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0,0.06);
+}
+#product1 .pro img{
+width: 100%;
+height:70%;
+border-radius: 20px;
+}
+#product1 .pro .des{
+text-align: center;
+padding: 10px 0;
+
+}
+#product1 .pro .des span{
+    color: azure;
+    font-size: 15px;
+}
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: black;
+    font-size: 15px;
+}
+#product1 .pro .des i{
+    font-size: 12px;
+    color: rgb(225, 210, 113);
+}
+/*#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 2px;
+    font-weight: 500;
+    background-color: aquamarine;
+    border: 1px solid green;
+    position: absolute;
+ 
+
+}*/
+#banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image: url("img/BD1.webp");
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    font-size: 16px;
+
+}
+#banner h4{
+    color:rgb(91, 60, 4);
+font-size:30px;
+padding:20px;
+
+}
+
+
+#banner h2{
+    color:rgb(20, 8, 110);
+    font-size: 30px;
+    padding: 10px 0;
+}
+#banner h2 span{
+    color:rgb(235, 231, 231);
+}
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 70px;
+}
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items:flex-start;
+    background-image: url("img/BD2.jpg");
+   min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    font-size: 16px;
+    padding: 30px;
+   
+}
+#sm-banner .banner-box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items:flex-start;
+     min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    font-size: 16px;
+    padding: 30px;
+   
+        background-image: url("img/BD1.webp");
+      
+    }
+#sm-banner h4{
+    color: rgb(1, 12, 19);
+    font-size: 30px;
+    font-weight: 300;
+
+}
+#sm-banner h2{
+    color: rgb(9, 8, 109);
+    font-size: 40px;
+    font-weight: 800;
+}
+
+#sm-banner span{
+    color: rgb(52, 6, 80);
+    font-size: 30px;
+    font-weight: 300;
+}
+#news{
+    display: flex;
+    width: 100%;
+    
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("img/new.webp");
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    color: rgb(67, 8, 122);
+    padding: 20px 20px 20px 20px;
+
+}
+#news h4{
+    font-size: 20px;
+    color: rgb(5, 5, 113);
+    color: white;
+}
+#news p{
+    font-size: 20px;
+    font-weight: 600;
+    color: yellowgreen;
+}
+#news p span{
+ 
+    color: rgb(207, 106, 23);
+}
+#news .form{
+    display: flex;
+    width: 40%;
+}
+#news input{
+    height: 3.125rem;
+    padding-top: 0 1.25em;
+    font-size: 14px;
+    width: 80%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    outline: none;
+   padding-right: 20px;
+    color: yellowgreen;
+}
+#news button{
+    background-color: rgba(117, 117, 43, 0.384);
+    font-size: 14px;
+    color: white;
+       white-space: nowrap;
+       border-top-left-radius: 0;
+       border-bottom-left-radius: 0;
+
+}
+footer{
+    text-align: center;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer .logo1 {
+margin-bottom: 30px;
+
+}
+footer h4{
+    font-size: 15px;
+    margin: 0 0 8px 0;
+}
+footer a{
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+
+}
+footer .follow{
+    margin-top: 20px;
+    color: black;
+    cursor: pointer;
+}
+ footer .install i{
+     padding-right: 20px;
+     cursor: pointer;
+
+ }footer .install .row img{
+     border: 1px solid black;
+     border-radius: 6px;;
+ }
+ footer .install img{
+     margin: 10px 0 15px 0;
+ }
+ footer .follow i:hover{
+     color: rgb(37, 186, 186);
+
+ }
+ footer .copyright{
+     width: 100%;
+     text-align: center;
+    
+ }
+
+ /* Shop Page*/
+ #page-header{
+   background-image: url("img/sban1.jpeg");  
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 16px;
+ }
+ #page-header h2,p{
+     color: black;
+
+ }
+ #pagination{
+     text-align: center;
+
+ }
+ #pagination a{
+     text-decoration: none;
+     background-color: rgb(62, 141, 114);
+     padding: 15px 20px;
+     border-radius: 4px;
+     color: azure;
+     font-weight: 600;
+ }
+ #pagination a i{
+     font-size: 16px;
+     font-weight: 600;
+ }
+
+ /*singl product*/
+ #prodetail
+ {
+     width: 40%;
+     margin-top: 50px;
+ }
+ .single-p-img{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+.sm-img-grp{
+    display: flex;
+    justify-content: space-between;
+}
+.sm-img-col{
+    flex-basis:24%;
+    cursor: pointer;
+    border: 1px solid;
+    
+} #prodetail .singal-p-detail{
+    width: 50%;
+    padding-top: 30px;
+}
+
+/*about page*/
+.rightsec{
+    justify-content: space-evenly;
+    height: 500px;
+    display: flex;
+    margin: auto;
+    max-width: 80%;
+    padding:0 50px;
+
+
+}
+.imgfluid{
+  
+    border-radius: 50px;
+    border: 20px solid white;
+    padding: 5px 5px;
+}
+
+.paras{
+padding: 0 60px;
+}
+
+.form-row{
+align-items: center;
+}
+/*registration*/
+@media (min-width: 1025px) {
+    .h-custom {
+    height: 100vh !important;
+    }
+    }
+
+    #register{
+        align-items: center;
+        display: flex;
+        
+
+    }
+    .gradient-custom {
+        /* fallback for old browsers */
+        background: #f093fb;
+        
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: -webkit-linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1));
+        
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1))
+        }
+        
+        .card-registration .select-input.form-control[readonly]:not([disabled]) {
+        font-size: 1rem;
+        line-height: 2.15;
+        padding-left: .75em;
+        padding-right: .75em;
+        }
+        .card-registration .select-arrow {
+        top: 13px;
+        }
